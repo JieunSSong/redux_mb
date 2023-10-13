@@ -1,0 +1,13 @@
+.footer div{
+  margin: 1rem auto;
+}
+.footer .footer_top {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footer .footer_mid ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}

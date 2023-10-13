@@ -1,0 +1,56 @@
+.genrePartLise{
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 350px;
+
+}
+.genreTitle{
+text-align: center;
+font-size: 2rem;
+font-weight: 700;
+text-transform: uppercase;
+margin: 1rem 0;
+background-color: var(--color-point1);
+color: #fff;
+padding: 0.5rem;
+margin-bottom: 3rem;
+}
+.genreBox img{width: 200px;}
+.genreBox h1{
+  width: 200px;
+  
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.genreBox{
+  cursor: pointer;
+  position: relative;
+  transition: 0.35s;
+}
+.genreBox::before {
+  content: 'VIEW';
+  position: absolute;
+  transition: 0.35s;
+  display: block;
+  background-color: var(--color-point1);
+  font-weight: 500;
+  color: #fff; padding:0.5rem 1rem;
+  top: 50%;
+  left: 50%; transform: translate(-50%, -50%);
+  border-radius: 0.2rem;
+}
+.genreBoxImg{
+  transition: 0.35s;
+  border-radius: 0.5rem;
+}
+.genreBoxImg:hover{
+  border: 5px solid var(--color-point1);
+  position: relative;
+  width: 200px;
+  height: 300px;
+  box-sizing: border-box;
+}

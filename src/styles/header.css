@@ -1,0 +1,15 @@
+.header {
+  margin: auto;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 0, 221);
+}
+.header .navLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .navLeft a {
+  color: white;
+}

@@ -1,0 +1,59 @@
+.mainBanner{
+  width: 100%; height: 650px;
+  background: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center top;
+}
+.mainBanner::before{
+  content: '';
+  background: url(../../public/images/pattern.png);
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.mainBanner::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: 
+  linear-gradient(
+    to right, 
+    #0d0101fb 0%, 
+    #1e03038f 30%, 
+    rgba(23,17,1,0) 80%, 
+    #0d0101fb 100%
+  );
+    position: absolute;
+  top: 0;
+  left: 0;
+}
+.movie_info{ position: absolute; top: 30%; left: 20%; z-index: 1; color: #fff; width: 30%;}
+.movie_info .title{
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.movie_info .vote{margin: 1rem 0;}
+.movie_info .overview{width: 80%;  line-height: 1.5rem;}
+/*media구간 */
+@media all and (min-width:1024px) {
+  .movie_info{ position: absolute; top: 30%; left: 20%; z-index: 1; color: #fff; width: 30%;}
+.movie_info .title{
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.movie_info .vote{margin: 1rem 0;}
+.movie_info .overview{width: 80%;  line-height: 1.5rem;}
+}
+@media all and (min-width:768px) and (max-width:1023px)  {
+  .movie_info{width: 80%; margin: auto;}
+  .movie_info .title{font-size: 2rem;}
+  .movie_info .overview{width:70%;}
+}
+@media all and (max-width:767px){
+  .movie_info{width: 80%; margin: auto;}
+  .movie_info .title{font-size:8vw;}
+}

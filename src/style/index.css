@@ -1,0 +1,95 @@
+body{
+  background-color: var(--color-bk3);
+}
+.movieSlideWrap{
+  margin: auto;
+  padding-top: 2.5rem;
+  
+}
+.movieSlideWrap h2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 3rem 0 1.5rem 0;
+}
+.MovieCard{
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  cursor: pointer;
+}
+/* MovieCard */
+.overlay{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.434);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff; transition: 0.35s;
+  padding: 1.5rem; box-sizing: border-box;
+}
+
+/* movieGenre */
+.movieGenre{
+  width: 100%;
+  margin: auto;
+}
+.movieGenre>h2{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-point1);
+  margin: 3rem;
+  text-align: center;
+}
+.overlay h2{color:#fff; font-size: 1.5rem;}
+.MovieCard:hover .overlay{opacity: 1;}
+.genrewrap{display: flex;}
+
+.trailer{
+ 
+  color:  brown !important;
+}
+.trailer:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+.trailerMain{
+  position: absolute;
+  top: 10%; left: 10%;
+}
+.videoYt{
+  background-color: black;
+  position: absolute;
+  top:60%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%; height: 50%;
+  z-index: 100;
+}
+
+/* media구간 */
+/* 데스크탑 */
+@media all and (min-width:1024px){
+  .movieSlideWrap{min-width: 80%; max-width:1200px;}
+}
+/* 테블릿 */
+@media all and (min-width:768px) and (max-width:1023px) {
+  .movieSlideWrap{width: 90%;}
+  .MovieCard{
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .movieSlideWrap h2{
+    text-align: center;
+  }
+}
+/* 모바일 */
+@media all and (max-width:767px) {
+  .movieSlideWrap{width: 80%;}
+  .MovieCard{width:100%; height: 500px;}
+  .movieSlideWrap h2{
+    text-align: center;
+    margin: 2rem 0;
+  }
+}

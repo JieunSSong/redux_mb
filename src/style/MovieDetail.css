@@ -1,0 +1,13 @@
+.detailBox{
+  width: 1000px;
+  margin: 150px auto;
+  
+}
+.detailTop{
+  display: flex;
+  
+}
+.detailPoster, .detailCard{
+  width: 45%;
+  border: 1px solid #000;
+}

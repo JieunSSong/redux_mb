@@ -1,0 +1,86 @@
+.navWrap{
+  background-color: #0000008b;
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 100; top: 0;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+.navLeft{margin-right: auto;}
+a{color: #fff !important; text-decoration: none;}
+.navLeft a img{margin-right: 3rem;}
+.navLeft a:not(:first-of-type) {
+  color: var(--color-w);
+  padding: 0.2rem 0.5rem ;
+  margin: 0.5rem;
+  position: relative;
+  bottom: 5px;
+}
+form{position: relative;}
+.searchBtn{cursor: pointer; border:none; position: absolute; right: 0;width: 30px; border: 1px solid #fff; border-radius: 0.3rem;
+  height:  30px; background-color: transparent;}
+.searchBtn::after{
+  content: '';
+  position: absolute;
+  background: url(../../public/images/search_icon.png); background-repeat: no-repeat;
+  width: 100%;height: 100%; left: 50%; top: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+input[type='text']{
+  outline: none;border:none; padding: 0 0.5rem; background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff; width: 180px;
+  border-radius: 0.3rem; height: 29px;
+}
+.mainSlide{
+  width: 1300px;
+  margin: auto;
+}
+.mainSlide h2{
+  font-size: var(--font-l);
+  margin-bottom: 2.1rem;
+  font-weight: 800;
+}
+/* media구간 */
+@media all and ( min-width:1024px) {
+  .nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media all and (min-width:768px) and (max-width:1023px) {
+  .nav{
+    width: 55%; display: flex; flex-direction: column; justify-content: center;
+    margin: auto;
+  }
+  .Search{
+    display: block; margin-top: 3rem;}
+    input[type='text']{width: 400px; padding:0 0.8rem;height: 35px;
+  }
+  .searchBtn{width: 35px; height: 38px; line-height: 38px;background-repeat: no-repeat;}
+  .navRight{margin-top: 1rem;}
+}
+@media all and (max-width:767px){
+  .nav{
+    width: 55%; display: flex; flex-direction: column; justify-content: center;
+    margin: auto;
+  }
+  .Search{
+    display: block; margin-top: 3rem;}
+    input[type='text']{width: 300px; padding:0 0.8rem;height: 35px;
+  }
+  .searchBtn{width: 35px; height: 37px; line-height: 38px;background-repeat: no-repeat;}
+  .navRight{margin-top: 1rem;}
+  .navLeft a img{
+    width: 160px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+}
